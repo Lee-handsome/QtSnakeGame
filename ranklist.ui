@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RankList</class>
+ <widget class="QWidget" name="RankList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>341</width>
+    <height>299</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>10</y>
+     <width>81</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>04b_03</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>排行榜</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>220</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>70</y>
+     <width>241</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <row>
+    <property name="text">
+     <string>NO.1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>NO.2</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>NO.3</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>玩家昵称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>分数</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>口天西</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>750</string>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>呆强</string>
+    </property>
+   </item>
+   <item row="1" column="1">
+    <property name="text">
+     <string>560</string>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string>杨叫兽</string>
+    </property>
+   </item>
+   <item row="2" column="1">
+    <property name="text">
+     <string>340</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>RankList</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>69</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
